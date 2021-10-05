@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" />
+		<title>Nationality of a Names</title>
+	</head>
+	<style>
+		body {
+			font-family: "Ubuntu", sans-serif;
+			background-color: burlywood;
+		}
+		.main {
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		.title {
+			margin-top: 50px;
+		}
+		h1 {
+			font-size: 40px;
+		}
+		p {
+			font-size: 25px;
+		}
+		/* .end {
+			display: flex;
+			justify-content: center;
+		} */
+		#text {
+			display: flex;
+			justify-content: center;
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+		#input {
+			width: 311px;
+			padding: 15px;
+			border: 3px solid;
+			border-radius: 20px;
+			font-size: large;
+		}
+		.btn {
+			display: flex;
+			justify-content: center;
+		}
+		#button {
+			background-color: white;
+			color: black;
+			border: 2px solid black;
+			border-radius: 10px;
+			padding: 11px 40px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 11px 2px;
+			cursor: pointer;
+			
+		}
+		#button:hover {
+			background-color: rgb(0, 0, 0);
+			color: white;
+		}
+		#name {
+			display: flex;
+			justify-content: center;
+		}
+		#country {
+			display: flex;
+			justify-content: center;
+			padding-top: 8px;
+			padding-bottom: 8px;
+			font-weight: 900;
+		}
+		#probability {
+			display: flex;
+			justify-content: center;
+			padding-bottom: 8px;
+			font-weight: 900;
+		}
+	</style>
+	<body>
+		<div class="main">
+			<div class="title">
+				<h1>Nationality of a Name</h1>
+			</div>
+			<div class="para">
+				<p style="font-weight: 600">Nationality of a Name predicts the nationality of a person given their name</p>
+				<p>Just type any name below you will get the Nationality of that name and Probability of that name</p>
+			</div>
+		</div>
+		<div class="end">
+			<div id="text">
+				<input type="text" id="input" placeholder="Enter Name" />
+			</div>
+			<div class="btn">
+				<button onclick="getName() " id="button">Click</button>
+			</div>
+			<div id="name"></div>
+
+			<div id="country"></div>
+
+			<div id="probability"></div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
